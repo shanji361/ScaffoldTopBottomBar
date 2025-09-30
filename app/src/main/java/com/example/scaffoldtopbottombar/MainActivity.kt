@@ -14,6 +14,9 @@ import com.example.scaffoldtopbottombar.ui.theme.ScaffoldTopBottomBarTheme
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import kotlinx.coroutines.launch
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.Person
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,7 +57,13 @@ fun ScaffoldWithNavigation() {
             NavigationBar {
                 tabs.forEachIndexed { index, title ->
                     NavigationBarItem(
-                        icon = { },
+                        icon = {
+                            when (title) {
+                                "Home" -> Icon(Icons.Filled.Home, contentDescription = "Home")
+                                "Settings" -> Icon(Icons.Filled.Settings, contentDescription = "Settings")
+                                "Profile" -> Icon(Icons.Filled.Person, contentDescription = "Profile")
+                            }
+                        },
                         label = { Text(title) },
                         selected = selectedTab == index, // highlight selected tab
                         onClick = { selectedTab = index } // update selected tab on click
