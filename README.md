@@ -30,6 +30,7 @@ A simple Jetpack Compose app example that demonstrates how to use `Scaffold` wit
 
 ---
 
-## Reference
-Lecture 3, Example 16 and 24 from the CS501 course materials.
-https://developer.android.com/develop/ui/compose/components/snackbar
+## References
+
+- CS501 Course Materials — Lecture 3, Examples 16 and 24  
+- [Android Developers: Snackbar](https://developer.android.com/develop/ui/compose/components/snackbar)
