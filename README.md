@@ -29,6 +29,16 @@ A simple Jetpack Compose app example that demonstrates how to use `Scaffold` wit
   - **Content Area**: A centered text showing the currently selected tab.
 
 ---
+## How to Run the App
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/shanji361/ScaffoldTopBottomBar.git
+   ```
+2. Open the project in Android Studio.
+
+3. Run the app on an emulator or a physical Android device.   
+---
 
 ## References
 
